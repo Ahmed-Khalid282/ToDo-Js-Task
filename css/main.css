@@ -38,7 +38,7 @@ body {
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 15px;
+    padding: 10px;
     background-color: var(--darker);
     color: var(--light);
     font-size: 15px;
@@ -60,7 +60,7 @@ h2{
 .task{
     margin: 0 auto;
     width: 20%;
-    text-align: center;
+    justify-content: space-between;
 }
 
 @media (max-width:767px){
@@ -74,25 +74,58 @@ h2{
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .taskdata{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--darkest);
     padding: 10px;
+    font-size: 24px;
+    background-color: var(--darkest);
     border-radius: 5px;
-    display: none;
 }
 
-.taskdata button{
+.delbutton{
     border-radius: 8px;
     padding: 6px;
-    background-color: var(--purple);
-    font-size: 15px;
+    background-color: #9e263d;
+    font-weight: bold;
+    float: right;
+}
+
+.editebutton{
+    border-radius: 8px;
+    padding: 6px;
+    background-color: rgb(157 143 62);
+    font-weight: bold;
+    float: right;
+    margin-right: 6px;
 }
 
 .taskdata p{
     padding: 6px;
     font-size: 20px;
+}
+
+.display{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+.inputdata{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 58%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: var(--light);
+}
+
+.inputdata:not(:read-only){
+    color: rgb(157 143 62);
 }
